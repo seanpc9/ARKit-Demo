@@ -17,7 +17,9 @@ class BearViewController: BaseSceneViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Enable shooting", for: .normal)
         button.setTitle("Disable shooting", for: .selected)
-        button.backgroundColor = UIColor.cyan //UIColor.willowTreeTeal
+        button.backgroundColor = UIColor.willowTreeTeal
+        button.widthAnchor.constraint(equalToConstant: 250).isActive = true
+        button.layer.cornerRadius = 10
         button.setTitleColor(UIColor.white, for: .normal)
         button.setTitleColor(UIColor.white, for: .selected)
         button.addTarget(self, action: #selector(toggleModePressed(_:)), for: .touchUpInside)

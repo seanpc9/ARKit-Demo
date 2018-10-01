@@ -9,5 +9,5 @@
 import UIKit
 
 extension UIColor {
-    static let willowTreeTeal = UIColor(red: 35, green: 212, blue: 183, alpha: 1.0)
+    static let willowTreeTeal = UIColor(red: 35/255.0, green: 212/255.0, blue: 183/255.0, alpha: 1.0)
 }
