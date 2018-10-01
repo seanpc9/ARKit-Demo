@@ -16,7 +16,6 @@
 		252837482161AAA200D0FF62 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252837472161AAA200D0FF62 /* UIColor.swift */; };
 		8D7618FD212EFEE2002DB17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7618FC212EFEE2002DB17C /* AppDelegate.swift */; };
 		8D7618FF212EFEE2002DB17C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7618FE212EFEE2002DB17C /* art.scnassets */; };
-		8D761901212EFEE2002DB17C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D761900212EFEE2002DB17C /* ViewController.swift */; };
 		8D761904212EFEE2002DB17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D761902212EFEE2002DB17C /* Main.storyboard */; };
 		8D761906212EFEE3002DB17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D761905212EFEE3002DB17C /* Assets.xcassets */; };
 		8D761909212EFEE3002DB17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D761907212EFEE3002DB17C /* LaunchScreen.storyboard */; };
@@ -37,7 +36,6 @@
 		8D7618F9212EFEE2002DB17C /* ARKitPresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitPresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7618FC212EFEE2002DB17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D7618FE212EFEE2002DB17C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		8D761900212EFEE2002DB17C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D761903212EFEE2002DB17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D761905212EFEE3002DB17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D761908212EFEE3002DB17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				25283737216153F300D0FF62 /* Controllers */,
 				252837422161579E00D0FF62 /* Extensions */,
 				8D7618FE212EFEE2002DB17C /* art.scnassets */,
-				8D761900212EFEE2002DB17C /* ViewController.swift */,
 				8D761902212EFEE2002DB17C /* Main.storyboard */,
 				8D761910212EFF2B002DB17C /* bear.dae */,
 				252837352161529700D0FF62 /* tree.dae */,
@@ -195,7 +192,6 @@
 			files = (
 				252837462161667700D0FF62 /* BaseSceneViewController.swift in Sources */,
 				2528373D2161569700D0FF62 /* TextViewController.swift in Sources */,
-				8D761901212EFEE2002DB17C /* ViewController.swift in Sources */,
 				8D7618FD212EFEE2002DB17C /* AppDelegate.swift in Sources */,
 				252837392161540A00D0FF62 /* RootViewController.swift in Sources */,
 				252837482161AAA200D0FF62 /* UIColor.swift in Sources */,

@@ -12,6 +12,13 @@ import ARKit
 
 class BaseSceneViewController: UIViewController {
     
+    enum BodyType: Int {
+        case bear = 1
+        case bullet = 2
+        case plane = 3
+        case globe = 4
+    }
+    
     lazy var sceneView: ARSCNView = {
         // Build and setup ARScene
         let arScene = ARSCNView(frame: view.frame)
@@ -105,11 +112,11 @@ extension BaseSceneViewController: ARSCNViewDelegate {
         planeNode.position = SCNVector3(anchorTransform.x,
                                         anchorTransform.y,
                                         anchorTransform.z)
+        planeNode.eulerAngles.x = .pi/2
         
         // Enable physics to this plane
         planeNode.physicsBody = SCNPhysicsBody(type: .static, shape: nil)
         planeNode.physicsBody?.categoryBitMask = BodyType.plane.rawValue
-        planeNode.eulerAngles.x = .pi/2
         
         // Add this node to the node the scene passed to us in this function
         node.addChildNode(planeNode)

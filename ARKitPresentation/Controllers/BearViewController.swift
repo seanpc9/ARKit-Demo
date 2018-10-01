@@ -62,8 +62,8 @@ class BearViewController: BaseSceneViewController {
         bearNode.scale = SCNVector3(0.08, 0.08, 0.08)
         
         // Add physics to the bear
-        bearNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
-        bearNode.physicsBody?.categoryBitMask = BodyType.bear.rawValue
+//        bearNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
+//        bearNode.physicsBody?.categoryBitMask = BodyType.bear.rawValue
         
         // Position the bear relative to the hit test point
         let hitTestWorldTransform = hitTestResult.worldTransform.columns.3
@@ -85,7 +85,7 @@ class BearViewController: BaseSceneViewController {
         // Create a box to shoot
         let box = SCNBox(width: 0.05, height: 0.05, length: 0.05, chamferRadius: 0)
         
-        // Add a material to the box
+        // Add a material to the box to color it green
         let material = SCNMaterial()
         material.diffuse.contents = UIColor.green
         box.firstMaterial = material

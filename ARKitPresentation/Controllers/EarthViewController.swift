@@ -48,7 +48,7 @@ class EarthViewController: BaseSceneViewController {
         // Add this node to the scene to make it appear
         sceneView.scene.rootNode.addChildNode(sphereNode)
         
-        addLight()
+//        addLight()
     }
     
     private func addLight() {
