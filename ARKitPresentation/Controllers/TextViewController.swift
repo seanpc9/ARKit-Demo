@@ -35,8 +35,7 @@ class TextViewController: BaseSceneViewController {
                                        worldTransformPoint.z)
         
         // Scale the node
-        textNode.scale = SCNVector3(0.2, 0.2, 0.2)
-//        textNode.scale = SCNVector3(0.02, 0.02, 0.02)
+        textNode.scale = SCNVector3(0.02, 0.02, 0.02)
         sceneView.scene.rootNode.addChildNode(textNode)
     }
 }

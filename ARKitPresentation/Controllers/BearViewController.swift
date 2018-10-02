@@ -62,8 +62,8 @@ class BearViewController: BaseSceneViewController {
         bearNode.scale = SCNVector3(0.08, 0.08, 0.08)
         
         // Add physics to the bear
-//        bearNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
-//        bearNode.physicsBody?.categoryBitMask = BodyType.bear.rawValue
+        bearNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
+        bearNode.physicsBody?.categoryBitMask = BodyType.bear.rawValue
         
         // Position the bear relative to the hit test point
         let hitTestWorldTransform = hitTestResult.worldTransform.columns.3
