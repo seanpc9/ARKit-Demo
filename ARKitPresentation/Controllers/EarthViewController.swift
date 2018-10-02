@@ -15,8 +15,8 @@ class EarthViewController: BaseSceneViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sceneView.autoenablesDefaultLighting = false
-        sceneView.automaticallyUpdatesLighting = false
+//        sceneView.autoenablesDefaultLighting = false
+//        sceneView.automaticallyUpdatesLighting = false
     }
     
     override func sceneTapped(at touchPoint: CGPoint) {
