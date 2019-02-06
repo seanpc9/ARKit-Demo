@@ -23,9 +23,9 @@ class TextViewController: BaseSceneViewController {
     }
     
     private func addTextToScene(with hitTestResult: ARHitTestResult) {
-        // Create the text object to add to the scene and make it colored orange (well, because RIT!)
-        let textGeometry = SCNText(string: "Hello RIT!", extrusionDepth: 1.0)
-        textGeometry.firstMaterial?.diffuse.contents = UIColor.orange
+        // Create the text object to add to the scene and make it colored maroon (GO HOKIES!!!)
+        let textGeometry = SCNText(string: "Hello VT!", extrusionDepth: 1.0)
+        textGeometry.firstMaterial?.diffuse.contents = UIColor(red: 99 / 255.0, green: 0, blue: 49 / 255.0, alpha: 1.0)
         
         // Create a Scene node with this text object and set it's position relative to our hit test result
         let textNode = SCNNode(geometry: textGeometry)
