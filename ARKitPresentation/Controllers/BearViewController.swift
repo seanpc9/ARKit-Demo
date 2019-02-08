@@ -53,13 +53,15 @@ class BearViewController: BaseSceneViewController {
     
     private func addBear(with hitTestResult: ARHitTestResult) {
         // Create a scene with a 3D model of a bear
-        let bearScene = SCNScene(named: "bear.dae")!
+//        let bearScene = SCNScene(named: "bear.dae")!
+        let bearScene = SCNScene(named: "art.scnassets/New_VT_logo.scn")!
         
         // Grab the actual bear object from the 3D model (ignoring other objects in the model)
-        let bearNode = bearScene.rootNode.childNode(withName: "bear", recursively: true)!
+//        let bearNode = bearScene.rootNode.childNode(withName: "bear", recursively: true)!
+        let bearNode = bearScene.rootNode.childNode(withName: "New_VT_logo", recursively: true)!
         
         // Scale down the bear since it's too large
-        bearNode.scale = SCNVector3(0.08, 0.08, 0.08)
+        bearNode.scale = SCNVector3(0.0008, 0.0008, 0.0008)
         
         // Add physics to the bear
         bearNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
@@ -68,7 +70,7 @@ class BearViewController: BaseSceneViewController {
         // Position the bear relative to the hit test point
         let hitTestWorldTransform = hitTestResult.worldTransform.columns.3
         bearNode.position = SCNVector3(hitTestWorldTransform.x,
-                                       hitTestWorldTransform.y,
+                                       hitTestWorldTransform.y + 0.5,
                                        hitTestWorldTransform.z)
         
         // Add this node to the scene
