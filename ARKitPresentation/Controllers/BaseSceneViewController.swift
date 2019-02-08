@@ -13,7 +13,7 @@ import ARKit
 class BaseSceneViewController: UIViewController {
     
     enum BodyType: Int {
-        case bear = 1
+        case logo = 1
         case bullet = 2
         case plane = 3
         case globe = 4

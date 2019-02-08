@@ -15,21 +15,21 @@ class RootViewController: UIViewController {
         //  value for tag is 0
         case earth = 1
         case text = 2
-        case bear = 3
+        case logo = 3
     }
     
     @IBOutlet var earthSceneButton: UIButton!
     @IBOutlet var textSceneButton: UIButton!
-    @IBOutlet var bearSceneButton: UIButton!
+    @IBOutlet var logoSceneButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         earthSceneButton.tag = SceneType.earth.rawValue
         textSceneButton.tag = SceneType.text.rawValue
-        bearSceneButton.tag = SceneType.bear.rawValue
+        logoSceneButton.tag = SceneType.logo.rawValue
         
-        for button in [earthSceneButton, textSceneButton, bearSceneButton] {
+        for button in [earthSceneButton, textSceneButton, logoSceneButton] {
             button?.addTarget(self, action: #selector(buttonPressed(_:)), for: .touchUpInside)
             button?.layer.cornerRadius = 20
         }
@@ -50,8 +50,8 @@ class RootViewController: UIViewController {
             viewController = EarthViewController()
         case .text:
             viewController = TextViewController()
-        case .bear:
-            viewController = BearViewController()
+        case .logo:
+            viewController = LogoViewController()
         }
         navigationController?.pushViewController(viewController, animated: true)
     }

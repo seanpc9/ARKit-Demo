@@ -65,8 +65,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="XFz-wO-7sf"/>
                     <connections>
-                        <outlet property="bearSceneButton" destination="2yX-9A-21t" id="vDT-xo-oGf"/>
                         <outlet property="earthSceneButton" destination="v47-Bk-C8I" id="Vrx-Bo-Z2g"/>
+                        <outlet property="logoSceneButton" destination="2yX-9A-21t" id="vDT-xo-oGf"/>
                         <outlet property="textSceneButton" destination="h6g-GW-Y5T" id="8S2-a2-DzR"/>
                     </connections>
                 </viewController>

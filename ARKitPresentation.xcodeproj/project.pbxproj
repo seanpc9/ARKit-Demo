@@ -11,7 +11,7 @@
 		252837392161540A00D0FF62 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252837382161540A00D0FF62 /* RootViewController.swift */; };
 		2528373B2161568B00D0FF62 /* EarthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2528373A2161568B00D0FF62 /* EarthViewController.swift */; };
 		2528373D2161569700D0FF62 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2528373C2161569700D0FF62 /* TextViewController.swift */; };
-		2528373F2161569F00D0FF62 /* BearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2528373E2161569F00D0FF62 /* BearViewController.swift */; };
+		2528373F2161569F00D0FF62 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2528373E2161569F00D0FF62 /* LogoViewController.swift */; };
 		252837462161667700D0FF62 /* BaseSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252837452161667700D0FF62 /* BaseSceneViewController.swift */; };
 		252837482161AAA200D0FF62 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252837472161AAA200D0FF62 /* UIColor.swift */; };
 		8D7618FD212EFEE2002DB17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7618FC212EFEE2002DB17C /* AppDelegate.swift */; };
@@ -30,7 +30,7 @@
 		252837382161540A00D0FF62 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		2528373A2161568B00D0FF62 /* EarthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthViewController.swift; sourceTree = "<group>"; };
 		2528373C2161569700D0FF62 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
-		2528373E2161569F00D0FF62 /* BearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearViewController.swift; sourceTree = "<group>"; };
+		2528373E2161569F00D0FF62 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
 		252837452161667700D0FF62 /* BaseSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSceneViewController.swift; sourceTree = "<group>"; };
 		252837472161AAA200D0FF62 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		8D7618F9212EFEE2002DB17C /* ARKitPresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitPresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 				252837452161667700D0FF62 /* BaseSceneViewController.swift */,
 				2528373A2161568B00D0FF62 /* EarthViewController.swift */,
 				2528373C2161569700D0FF62 /* TextViewController.swift */,
-				2528373E2161569F00D0FF62 /* BearViewController.swift */,
+				2528373E2161569F00D0FF62 /* LogoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 				8D7618FD212EFEE2002DB17C /* AppDelegate.swift in Sources */,
 				252837392161540A00D0FF62 /* RootViewController.swift in Sources */,
 				252837482161AAA200D0FF62 /* UIColor.swift in Sources */,
-				2528373F2161569F00D0FF62 /* BearViewController.swift in Sources */,
+				2528373F2161569F00D0FF62 /* LogoViewController.swift in Sources */,
 				2528373B2161568B00D0FF62 /* EarthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
