@@ -51,6 +51,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1g-Xh-MH2">
+                                <rect key="frame" x="112.5" y="369" width="150" height="75"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="93d-Ep-cda"/>
+                                    <constraint firstAttribute="height" constant="75" id="ZG7-Ss-hgd"/>
+                                </constraints>
+                                <state key="normal" title="AR Quick Look">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -60,6 +71,8 @@
                             <constraint firstItem="h6g-GW-Y5T" firstAttribute="top" secondItem="v47-Bk-C8I" secondAttribute="bottom" constant="20" id="WDt-eB-4Ct"/>
                             <constraint firstItem="h6g-GW-Y5T" firstAttribute="centerX" secondItem="YfP-2W-MOo" secondAttribute="centerX" id="WGr-es-YYP"/>
                             <constraint firstItem="2yX-9A-21t" firstAttribute="centerX" secondItem="YfP-2W-MOo" secondAttribute="centerX" id="kbG-jk-Ng0"/>
+                            <constraint firstItem="u1g-Xh-MH2" firstAttribute="top" secondItem="2yX-9A-21t" secondAttribute="bottom" constant="20" id="s11-wQ-tcq"/>
+                            <constraint firstItem="u1g-Xh-MH2" firstAttribute="centerX" secondItem="YfP-2W-MOo" secondAttribute="centerX" id="xm9-OS-Gch"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9VO-xv-MtX"/>
                     </view>
@@ -67,6 +80,7 @@
                     <connections>
                         <outlet property="earthSceneButton" destination="v47-Bk-C8I" id="Vrx-Bo-Z2g"/>
                         <outlet property="logoSceneButton" destination="2yX-9A-21t" id="vDT-xo-oGf"/>
+                        <outlet property="quickLookButton" destination="u1g-Xh-MH2" id="YmN-Kj-jso"/>
                         <outlet property="textSceneButton" destination="h6g-GW-Y5T" id="8S2-a2-DzR"/>
                     </connections>
                 </viewController>

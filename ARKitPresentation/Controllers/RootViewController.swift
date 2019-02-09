@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuickLook
 
 class RootViewController: UIViewController {
     
@@ -21,7 +22,8 @@ class RootViewController: UIViewController {
     @IBOutlet var earthSceneButton: UIButton!
     @IBOutlet var textSceneButton: UIButton!
     @IBOutlet var logoSceneButton: UIButton!
-
+    @IBOutlet weak var quickLookButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +35,9 @@ class RootViewController: UIViewController {
             button?.addTarget(self, action: #selector(buttonPressed(_:)), for: .touchUpInside)
             button?.layer.cornerRadius = 20
         }
+        
+        quickLookButton.layer.cornerRadius = 20
+        quickLookButton.addTarget(self, action: #selector(quickLookButtonPressed(_:)), for: .touchUpInside)
         
         // Disable automatic screen sleep
         UIApplication.shared.isIdleTimerDisabled = true
@@ -54,5 +59,23 @@ class RootViewController: UIViewController {
             viewController = LogoViewController()
         }
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @objc func quickLookButtonPressed(_ sender: UIButton) {
+        let quickLookController = QLPreviewController()
+        quickLookController.dataSource = self
+        quickLookController.delegate = self
+        present(quickLookController, animated: true)
+    }
+}
+
+extension RootViewController: QLPreviewControllerDelegate, QLPreviewControllerDataSource {
+    
+    func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
+        return 1
+    }
+    
+    func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
+        return Bundle.main.url(forResource: "New_VT_logo", withExtension: "usdz")! as QLPreviewItem
     }
 }
