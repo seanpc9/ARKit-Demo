@@ -2,18 +2,16 @@
 
 Project showing off some cool, easy to build Augmented Reality demos.
 
-Demos include the following:
-- Earth floating in an absolute position, rotating infront of the user (optionally adding an artificial light over top of the globe.
-- Placing text ontop of a detected plane
-- Placing a teddy bear ontop of a detected plane, with a mode to shoot small cubes at the bear and use physics that apply to both the bear and the cubes. The bear can be knocked off of the plane if cubes with the right force are applied to it!
+Demos include:
 
-## Branches: ##
-- `master` which contains the final code
-- `demo-starter` which contains a lot more commented code to walk through a demo showcasing adding lights to regular colored spheres and adding physics to the bear.
+- Earth floating in an absolute position, rotating in front of the user (optionally adding an artificial light over top of the globe.
+- Placing text on top of a detected plane
+- Placing the new VT logo on detected plane, with a mode to shoot small cubes at the logo and use physics that apply to both the logo and the cubes. The logo can be knocked off of the plane if you're accurate enough!
+- AR Quick Look
 
 ## About WillowTree! ##
 
-Built by WillowTree Engineers for a Tech Talk at RIT
+Built by WillowTree Engineers for a tech talk at Virginia Tech
 
 ![WillowTree Logo](https://github.com/willowtreeapps/spruce-ios/raw/master/imgs/willowtree_logo.png)
 
